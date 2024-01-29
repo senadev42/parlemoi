@@ -1,0 +1,344 @@
+[gd_scene load_steps=47 format=3 uid="uid://cdrkmfd3bsgoh"]
+
+[ext_resource type="Texture2D" uid="uid://dffmp3rab8dje" path="res://assets/text/Sprite-0002.png" id="2_laude"]
+[ext_resource type="Texture2D" uid="uid://8wu76yw44u2e" path="res://assets/text/Sprite-0001.png" id="3_pl720"]
+[ext_resource type="Texture2D" uid="uid://khj2kr8ee1nt" path="res://assets/objects/cooking/egg1.png" id="4_0go33"]
+[ext_resource type="Script" path="res://scripts/CookingByTheBook.gd" id="4_raax6"]
+[ext_resource type="Texture2D" uid="uid://cldqt3p60y3v1" path="res://assets/background/cooking by the book.png" id="4_vtk42"]
+[ext_resource type="Texture2D" uid="uid://ckfn2adl4ygst" path="res://assets/objects/cooking/cabinet.png" id="5_5mm5f"]
+[ext_resource type="Texture2D" uid="uid://bu1qyo71d3fft" path="res://assets/objects/cooking/flour1.png" id="5_15xpc"]
+[ext_resource type="Texture2D" uid="uid://cpfd0tuhceom0" path="res://assets/objects/cooking/egg2.png" id="5_xwfdb"]
+[ext_resource type="Texture2D" uid="uid://ha4by2jogt3o" path="res://assets/objects/cooking/flour2.png" id="6_7r15n"]
+[ext_resource type="Texture2D" uid="uid://c4fmmqfdw8i88" path="res://assets/objects/cooking/bowl1.png" id="7_g5v4c"]
+[ext_resource type="Texture2D" uid="uid://cktiyulhe3rdr" path="res://assets/objects/cooking/bowl2.png" id="8_7qlfy"]
+[ext_resource type="Texture2D" uid="uid://dh6usjqwmrlsk" path="res://assets/objects/cooking/bowl3.png" id="9_ddukd"]
+[ext_resource type="Texture2D" uid="uid://djkad6tjfehk0" path="res://assets/objects/cooking/milk1.png" id="9_lke8l"]
+[ext_resource type="Texture2D" uid="uid://c4qb1h2o0yx8n" path="res://assets/objects/cooking/others.png" id="10_0h53n"]
+[ext_resource type="Texture2D" uid="uid://c16u2cuh2ixbo" path="res://assets/objects/cooking/milk2.png" id="10_tlk0p"]
+[ext_resource type="Texture2D" uid="uid://ddlo2whhag8jw" path="res://assets/objects/cooking/bowlempty1.png" id="11_f7e8k"]
+[ext_resource type="Texture2D" uid="uid://rus0xj6eua3d" path="res://assets/objects/cooking/eed.png" id="11_owwxu"]
+[ext_resource type="Texture2D" uid="uid://d4geia8b2t1nw" path="res://assets/objects/cooking/cookingboard.png" id="11_w7prg"]
+[ext_resource type="Texture2D" uid="uid://cd3fgwgroxuc4" path="res://assets/objects/cooking/bowlempty2.png" id="12_j5txr"]
+[ext_resource type="Texture2D" uid="uid://ciyxeok0byc2j" path="res://assets/objects/cooking/beancoffee.png" id="12_n50eb"]
+[ext_resource type="Texture2D" uid="uid://c6os8am8pprd7" path="res://assets/objects/cooking/bowlempty3.png" id="13_dqbrq"]
+[ext_resource type="Texture2D" uid="uid://bgpcl7q86rb4j" path="res://assets/objects/cooking/bowlone1.png" id="14_marwt"]
+[ext_resource type="Texture2D" uid="uid://djuodno30prfl" path="res://assets/objects/cooking/bowlone2.png" id="15_2d1bb"]
+[ext_resource type="Texture2D" uid="uid://by43yhnabgusw" path="res://assets/objects/cooking/bowlone3.png" id="16_7xsn1"]
+[ext_resource type="Texture2D" uid="uid://5nbf2eoxon3y" path="res://assets/objects/cooking/bowlthree1.png" id="17_msdw7"]
+[ext_resource type="Texture2D" uid="uid://ck36nln6eh71x" path="res://assets/objects/cooking/bowlthree2.png" id="18_4ux6h"]
+[ext_resource type="Texture2D" uid="uid://b64y540v8vsbl" path="res://assets/objects/cooking/bowlthree3.png" id="19_31wct"]
+[ext_resource type="Texture2D" uid="uid://doyinx2p1rlgg" path="res://assets/objects/cooking/bowltwo1.png" id="20_0es6u"]
+[ext_resource type="Texture2D" uid="uid://c4ok2kqofu7s3" path="res://assets/objects/cooking/bowltwo2.png" id="21_1qdu6"]
+[ext_resource type="Texture2D" uid="uid://1elm17ql6v0h" path="res://assets/objects/cooking/bowltwo3.png" id="22_7cda5"]
+[ext_resource type="Texture2D" uid="uid://dhw8alfqsx3re" path="res://assets/objects/cooking/oven1.png" id="31_08g8b"]
+[ext_resource type="Texture2D" uid="uid://dfqjp3f2n2m1s" path="res://assets/objects/cooking/ovenend.png" id="32_k5s43"]
+[ext_resource type="Texture2D" uid="uid://dqddgn0uu0n8r" path="res://assets/objects/cooking/ovenfull1.png" id="33_wtmm5"]
+[ext_resource type="Texture2D" uid="uid://joufn2n2skne" path="res://assets/objects/cooking/ovenfull2.png" id="34_ynewj"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xukaq"]
+radius = 15.4217
+height = 60.1446
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_46vau"]
+radius = 20.7059
+height = 52.7059
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s510v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_g5v4c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_7qlfy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ddukd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_f7e8k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_j5txr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_dqbrq")
+}],
+"loop": true,
+"name": &"empty",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_marwt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_2d1bb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_7xsn1")
+}],
+"loop": true,
+"name": &"stageone",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_msdw7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_4ux6h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_31wct")
+}],
+"loop": true,
+"name": &"stagethree",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_0es6u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_1qdu6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_7cda5")
+}],
+"loop": true,
+"name": &"stagetwo",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_81ac6"]
+size = Vector2(89.6, 50.6182)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tqobl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_0go33")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_xwfdb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_45ue6"]
+radius = 18.0
+height = 48.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mc8j0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_15xpc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7r15n")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fpidl"]
+radius = 24.0
+height = 64.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s2iw0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_lke8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_tlk0p")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jwq3n"]
+radius = 7.96683
+height = 44.6141
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ruyu8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("31_08g8b")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("32_k5s43")
+}],
+"loop": true,
+"name": &"ovenend",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("33_wtmm5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_ynewj")
+}],
+"loop": true,
+"name": &"ovenful",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lxcfv"]
+size = Vector2(108.836, 64)
+
+[node name="Node" type="Node"]
+
+[node name="WhichScreen" type="Node2D" parent="."]
+scale = Vector2(0.48, 0.48)
+
+[node name="Sprite-0002" type="Sprite2D" parent="WhichScreen"]
+position = Vector2(327.083, 52.0833)
+texture = ExtResource("2_laude")
+
+[node name="Sprite-0001" type="Sprite2D" parent="WhichScreen"]
+position = Vector2(116.667, 56.25)
+texture = ExtResource("3_pl720")
+
+[node name="prep" type="Node" parent="."]
+
+[node name="CookingByTheBook" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("4_vtk42")
+script = ExtResource("4_raax6")
+
+[node name="Cabinet" type="Sprite2D" parent="CookingByTheBook"]
+position = Vector2(-19, 209)
+scale = Vector2(2.35417, 2.35417)
+texture = ExtResource("5_5mm5f")
+
+[node name="Others2" type="Sprite2D" parent="CookingByTheBook"]
+position = Vector2(-310.5, 207)
+scale = Vector2(2.26563, 2.26563)
+texture = ExtResource("10_0h53n")
+
+[node name="Cookingboard" type="Sprite2D" parent="CookingByTheBook"]
+position = Vector2(354, 212)
+scale = Vector2(2.12207, 2.12207)
+texture = ExtResource("11_w7prg")
+
+[node name="actionhappening" type="Label" parent="CookingByTheBook/Cookingboard"]
+offset_left = -115.0
+offset_top = -56.0
+offset_right = -33.0
+offset_bottom = -40.0
+theme_override_font_sizes/font_size = 10
+text = "Idle"
+
+[node name="Others" type="Node" parent="CookingByTheBook"]
+
+[node name="Eed" type="Sprite2D" parent="CookingByTheBook/Others"]
+position = Vector2(478, 643)
+scale = Vector2(1.2004, 1.2004)
+texture = ExtResource("11_owwxu")
+metadata/_edit_group_ = true
+
+[node name="Area2D" type="Area2D" parent="CookingByTheBook/Others/Eed"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CookingByTheBook/Others/Eed/Area2D"]
+position = Vector2(0, 3.08434)
+shape = SubResource("CapsuleShape2D_xukaq")
+
+[node name="Beancoffee" type="Sprite2D" parent="CookingByTheBook/Others"]
+position = Vector2(483, 545)
+scale = Vector2(0.567219, 0.567219)
+texture = ExtResource("12_n50eb")
+metadata/_edit_group_ = true
+
+[node name="Area2D" type="Area2D" parent="CookingByTheBook/Others/Beancoffee"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CookingByTheBook/Others/Beancoffee/Area2D"]
+position = Vector2(0, -1.88236)
+shape = SubResource("CapsuleShape2D_46vau")
+
+[node name="bowl" type="AnimatedSprite2D" parent="CookingByTheBook/Others"]
+position = Vector2(1136, 604)
+scale = Vector2(1.71875, 1.71875)
+sprite_frames = SubResource("SpriteFrames_s510v")
+animation = &"stagethree"
+
+[node name="Area2D" type="Area2D" parent="CookingByTheBook/Others/bowl"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CookingByTheBook/Others/bowl/Area2D"]
+position = Vector2(2.32727, 20.0727)
+shape = SubResource("RectangleShape2D_81ac6")
+
+[node name="ingredients" type="Node" parent="CookingByTheBook"]
+
+[node name="egg" type="AnimatedSprite2D" parent="CookingByTheBook/ingredients"]
+position = Vector2(561, 657)
+sprite_frames = SubResource("SpriteFrames_tqobl")
+frame_progress = 0.654786
+
+[node name="Area2D" type="Area2D" parent="CookingByTheBook/ingredients/egg"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CookingByTheBook/ingredients/egg/Area2D"]
+shape = SubResource("CapsuleShape2D_45ue6")
+
+[node name="flour" type="AnimatedSprite2D" parent="CookingByTheBook/ingredients"]
+position = Vector2(569, 573)
+sprite_frames = SubResource("SpriteFrames_mc8j0")
+frame_progress = 0.943756
+
+[node name="Area2D" type="Area2D" parent="CookingByTheBook/ingredients/flour"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CookingByTheBook/ingredients/flour/Area2D"]
+position = Vector2(3, 1)
+shape = SubResource("CapsuleShape2D_fpidl")
+
+[node name="milk" type="AnimatedSprite2D" parent="CookingByTheBook/ingredients"]
+position = Vector2(568, 493)
+scale = Vector2(1.88281, 1.88281)
+sprite_frames = SubResource("SpriteFrames_s2iw0")
+
+[node name="Area2D" type="Area2D" parent="CookingByTheBook/ingredients/milk"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CookingByTheBook/ingredients/milk/Area2D"]
+position = Vector2(-2.12448, -3.18672)
+shape = SubResource("CapsuleShape2D_jwq3n")
+
+[node name="oven" type="AnimatedSprite2D" parent="CookingByTheBook"]
+position = Vector2(450, -135)
+scale = Vector2(2.76563, 2.76563)
+sprite_frames = SubResource("SpriteFrames_ruyu8")
+animation = &"ovenend"
+
+[node name="Area2D" type="Area2D" parent="CookingByTheBook/oven"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CookingByTheBook/oven/Area2D"]
+position = Vector2(-0.903961, -4.51977)
+shape = SubResource("RectangleShape2D_lxcfv")
+
+[connection signal="mouse_entered" from="CookingByTheBook/Others/Eed/Area2D" to="CookingByTheBook" method="_on_eed_2d_mouse_entered"]
+[connection signal="mouse_entered" from="CookingByTheBook/Others/Beancoffee/Area2D" to="CookingByTheBook" method="_on_bean_2d_mouse_entered"]
+[connection signal="area_entered" from="CookingByTheBook/Others/bowl/Area2D" to="CookingByTheBook" method="_on_bowl_area_entered"]
+[connection signal="mouse_entered" from="CookingByTheBook/Others/bowl/Area2D" to="CookingByTheBook" method="_on_bowl_2d_mouse_entered"]
+[connection signal="mouse_entered" from="CookingByTheBook/ingredients/egg/Area2D" to="CookingByTheBook" method="_on_egg_2d_mouse_entered"]
+[connection signal="mouse_entered" from="CookingByTheBook/ingredients/flour/Area2D" to="CookingByTheBook" method="_on_flour_2d_mouse_entered"]
+[connection signal="mouse_entered" from="CookingByTheBook/ingredients/milk/Area2D" to="CookingByTheBook" method="_on_milk_2d_mouse_entered"]
+[connection signal="area_entered" from="CookingByTheBook/oven/Area2D" to="CookingByTheBook" method="_on_area_2d_area_entered"]
+[connection signal="mouse_entered" from="CookingByTheBook/oven/Area2D" to="CookingByTheBook" method="_on_oven_2d_mouse_entered"]
