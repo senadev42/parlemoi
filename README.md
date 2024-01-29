@@ -21,16 +21,15 @@ Core Mechanics
 
 ##### Step 1: Bake
 
-1. Ingredients
+1. Ingredients |
 Basics: Egg, Flour, Milk
 Extras: Coffee
-
 2. Into the bowl
-
 3. into the oven
 
 
-### Step 2: Serve
+##### Step 2: Serve
+> plate?
 
 
 
